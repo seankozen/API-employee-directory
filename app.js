@@ -105,7 +105,7 @@ gridContainer.addEventListener('click', event => {
 modalArrows.addEventListener('click', e => {
     if(e.target === nextEmployee && currentModalIndex < employees.length - 1){
         currentModalIndex++; 
-    } else if(e.target === nextEmployee && currentModalIndex === employees.length -1){
+    } else if(e.target === nextEmployee && currentModalIndex == employees.length -1){
         currentModalIndex = 0;
     } else if(e.target === prevEmployee && currentModalIndex > 0) {
         currentModalIndex--;
